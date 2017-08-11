@@ -1,0 +1,2 @@
+# laravelfinali.loc
+test laravel
