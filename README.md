@@ -1,2 +1,2 @@
-# laravelfinali.loc
+# laravelfinal.loc
 test laravel
