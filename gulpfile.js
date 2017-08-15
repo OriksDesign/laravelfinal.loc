@@ -17,11 +17,11 @@ var gulp           = require('gulp'),
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: "http://http://laravelfinal.loc/public/"
+        proxy: "http://laravelfinal.loc/"
     });
 });
 gulp.task('watch', ['browser-sync'], function() {
 	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/*.php', browserSync.reload);	
+	gulp.watch('*/*.php', browserSync.reload);	
 });
 gulp.task('default', ['watch']);

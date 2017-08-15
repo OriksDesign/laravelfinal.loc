@@ -55,3 +55,8 @@ Route::group(['prefix'=>'admin'], function () {
 	});			
 });
 Route::get('/about/{id}','FirstController@index');
+
+Route::get('/articles', ['uses'=>'Admin\Core@getArticles','as'=>'articles']);
+Route::get('/article/{id}', ['uses'=>'Admin\Core@getArticle','as'=>'article']);
+Route::get('/articletwo', ['uses'=>'Admin\Core@getArticletwo','as'=>'articletwo']);
+//Route::resource('pages','Admin\CoreController');
